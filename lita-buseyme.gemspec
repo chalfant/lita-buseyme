@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-buseyme"
-  spec.version       = "0.1.0"
+  spec.version       = "0.2.0"
   spec.authors       = ["Chris Chalfant"]
   spec.email         = ["chalfants@gmail.com"]
   spec.description   = "Display a motivational Busey"
