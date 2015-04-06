@@ -1,19 +1,6 @@
 module Lita
   module Handlers
     class Buseyme < Handler
-      IMAGES = [
-        "http://images.starpulse.com/pictures/2011/09/06/previews/Gary%20Busey-20110906-15.jpg",
-        "http://cdn.cnwimg.com/wp-content/uploads/2010/11/gary-busey-210x300.jpg",
-        "http://www.thrashingzombies.com/wp-content/uploads/2011/06/3779262793_f3d19d5b9f_o.jpg",
-        "http://www.blogcdn.com/www.switched.com/media/2007/04/busey_two.jpg",
-        "http://realitytvsting.com/wp-content/uploads/2013/04/Gary+Busey+zc8fT8iuM0Hm.jpg",
-        "http://www.thedailyrash.com/wp-content/uploads/2010/06/gary_busey_roast.jpg",
-        "http://whatculture.com/wp-content/uploads/2008/11/gary_busey2.jpg",
-        "http://abcnews.go.com/images/Business/gty_gary_busey_dm_120208_wblog.jpg",
-        "http://www.swallowdaily.com/wp-content/uploads/2013/03/GaryBusey.jpg",
-        "http://www.starpulse.com/news/media/Gary-Busey-022310.jpg"
-      ]
-
       QUOTES = [
         "My dark side, my shadow, my lower companion is now in the back room blowing up balloons for kids' parties.",
         "You know what 'FAILING' stands for? It stands for 'Finding An Important Lesson, Inviting Needed Growth.'",
@@ -34,7 +21,7 @@ module Lita
       })
 
       def busey(response)
-        response.reply "#{QUOTES.sample} #{IMAGES.sample}"
+        response.reply "#{QUOTES.sample} https://s3.amazonaws.com/hofftest/busey#{rand(1..12)}.jpg"
       end
     end
 
